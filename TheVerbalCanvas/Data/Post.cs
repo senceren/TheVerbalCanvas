@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using System.ComponentModel.DataAnnotations;
 
 namespace TheVerbalCanvas.Data
@@ -13,6 +14,7 @@ namespace TheVerbalCanvas.Data
 
         public string? Image { get; set; }
         public string AuthorId { get; set; } = null!;
+
         public IdentityUser Author { get; set; } = null!;
     }
 }
